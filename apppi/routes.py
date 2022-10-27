@@ -13,7 +13,7 @@ def index():
     return render_template('index.html', title='2022 Forever', user=best_pi, menu=menu)
 
 
-@app.route('/help')
+@app.route ('/help')
 def help():
     sp = ['PI', '2014', '']
     return render_template('help.html', title=choice(sp), menu=menu)
